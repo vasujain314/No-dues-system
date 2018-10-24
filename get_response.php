@@ -5,10 +5,11 @@ if((isset($_POST['name'])&& $_POST['name'] !='') && (isset($_POST['rollno'])&& $
 {
 $yourName = $conn->real_escape_string($_POST['name']);
 $yourRollno = $conn->real_escape_string($_POST['rollno']);
+$forwhat = $conn->real_escape_string($_POST['for']);
 $yourMoney = $conn->real_escape_string($_POST['rupees']);
 $contact = $conn->real_escape_string($_POST['contact']);
  
-$sql="INSERT INTO admintable (name, rollno, rupees, contact) VALUES ('".$yourName."','".$yourRollno."', '".$yourMoney."', '".$contact."')";
+$sql="INSERT INTO admintable (name, rollno, forw, rupees, contact) VALUES ('".$yourName."','".$yourRollno."','".$forwhat."', '".$yourMoney."', '".$contact."')";
  
  
 if(!$result = $conn->query($sql)){
