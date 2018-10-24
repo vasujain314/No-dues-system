@@ -16,7 +16,7 @@ if(!$result = $conn->query($sql)){
 die('There was an error running the query [' . $conn->error . ']');
 }
 else{
-	header("location: contact_mail.php");
+	header("location: home.php");
     exit;
 }
 }
