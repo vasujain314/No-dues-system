@@ -70,10 +70,15 @@ function func(){
 </head>
 <body onload="func()">
 <br>
-<div class="container" align="right">
+<div class="container" >
+<div class="row">
+
+<div class="col-lg-12" align="right";>
 <form action="index.html">
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Logout</button>
 </form>
+</div>
+</div>
 </div>
 <div class="container">
 <div class="row">
@@ -90,10 +95,8 @@ function func(){
 </div>
 </div>
 <br><br>
-<div class="container">
+<div class="container" style="width:400px;">
 <div class="row">
-
-<div class="col-md-6">
 <h2 style="color:white;">Submit due against someone.</h2>
 <form name="contact-form" action="get_response.php" method="post" id="contact-form">
 <div class="form-group">
@@ -105,7 +108,7 @@ function func(){
 <input type="text" class="form-control" name="rollno" placeholder="roll number" required>
 </div>
 <div class="form-group">
-<label style="color:white;" for="reason">FOR WHAT</label>
+<label style="color:white;" for="reason">For what</label>
 <input type="text" class="form-control" name="for" placeholder="for what" required>
 </div>
 <div class="form-group">
@@ -118,22 +121,6 @@ function func(){
 </div>
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
 </form>
-</div>
-<div class="col-md-1">
-</div>
-<div class="col-md-5">
-<h2 style="color:white;">check if you are having dues.</h2>
-<form name="contact-form" action="read.php" method="post" id="contact-form">
-<div class="form-group">
-<label style="color:white;" for="Name">Rollno.</label>
-<input type="text" class="form-control" name="rollno" placeholder="Roll number" required>
-</div>
-<button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">check</button>
-
-</div>
-</form>
-<div class="response_msg"></div>
-</div>
 </div>
 </div>
 
