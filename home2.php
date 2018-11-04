@@ -4,20 +4,21 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
 #snackbar {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #fff; 
-    text-align: center; 
-    border-radius: 2px; 
-    padding: 16px; 
-    position: fixed; 
-    z-index: 1; 
-    left: 50%;
-    bottom: 30px; 
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
 }
 
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
     visibility: visible; 
    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -103,15 +104,15 @@ function func(){
 <input type="text" class="form-control" name="name" placeholder="Name" required>
 </div>
 <div class="form-group">
-<label style="color:white;" for="exampleInputEmail1">Roll number</label>
+<label style="color:white;" >Roll number</label>
 <input type="text" class="form-control" name="rollno" placeholder="roll number" required>
 </div>
 <div class="form-group">
-<label style="color:white;" for="reason">For what</label>
+<label style="color:white;" >For what</label>
 <input type="text" class="form-control" name="for" placeholder="for what" required>
 </div>
 <div class="form-group">
-<label style="color:white;" for="Phone">Money</label>
+<label style="color:white;" >Money</label>
 <input type="text" class="form-control" name="rupees" placeholder="rupees" required>
 </div>
 <div class="form-group">
@@ -130,7 +131,7 @@ function func(){
 </div>
 <br>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<div id="snackbar">Submit a due against someone.</div>
+<div id="snackbar">Thanks for submitting a due.</div>
 
 </body>
 </html>
